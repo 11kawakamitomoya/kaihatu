@@ -1,10 +1,28 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tokuda_style.css">
+    <title>川上の学校紹介（作成者：徳田）</title>
 </head>
 <body>
-<script src="jsp/app.js"></script>
-</body>
+    <nav id="g_navi">
+        <ul>
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="kawakami.html">川上</a></li>
+            <li><a href="koji.html">小路</a></li>
+            <li><a href="satou.html">佐藤</a></li>
+        </ul>
+    </nav>    <h1>川上の出身校紹介（作成者：徳田）</h1>
+    <img src="images/yakagekoukou.jpg">
+    <h2>学校名：岡山県立矢掛高等学校</h2>
+    <button onClick="Mycolor()">Change Color</button>
+    <div id="myID">Hello World</div>
+    <script type='text/javascript'>
+        function Mycolor() {
+        var element = document.getElementById("myID");
+        element.style.backgroundColor='#900';
+        }
+    </script>
+    </body>
 </html>
