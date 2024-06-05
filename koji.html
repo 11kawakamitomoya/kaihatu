@@ -30,38 +30,37 @@
 <p>佐藤</p>
 <P>徳田</P>
 <p>川上</p>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ボタン押下回数カウント</title>
-    <style>
-        #counter {
-            font-size: 24px;
-            margin-top: 10px;
-        }
-    </style>
+    <title>アラートメッセージを表示</title>
 </head>
 <body>
-    <button id="countButton">ボタンを押してね</button>
-    <div id="counter">0回</div>
+    <label for="numberInput">数字を入力してください:</label>
+    <input type="text" id="numberInput">
+    <button onclick="showAlerts()">アラートを表示</button>
 
-    <script>
-        // カウンターの初期値を0に設定
-        let count = 0;
-
-        // ボタンとカウンター表示要素を取得
-        const button = document.getElementById('countButton');
-        const counter = document.getElementById('counter');
-
-        // ボタンがクリックされた時の処理を設定
-        button.addEventListener('click', () => {
-            count++;
-            counter.textContent = `${count}回`;
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
+<script>function showAlerts() {
+    // テキストボックスの値を取得
+    const numberInput = document.getElementById('numberInput').value;
+    const count = parseInt(numberInput, 10); // 文字列を整数に変換
+
+    // 数が有効かどうかチェック
+    if (isNaN(count) || count <= 0) {
+        alert('正の整数を入力してください。');
+        return;
+    }
+
+    // 入力された数だけアラートを表示
+    for (let i = 0; i < count; i++) {
+        alert(`アラートメッセージ ${i + 1}`);
+    }
+}
+</script>
 </html>
 
 </html>
