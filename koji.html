@@ -8,10 +8,13 @@
     <h1><center>岡山県立総社南高校</center></h1>
 </head>
 <center><img src="画像.png"></center>
-<center><img src="画像1.png"></center>         
+<center><img src="画像1.png"></center>      
 <h2><center>創立</center></h2>
 <p><center>1986年に創立</center></p>
+<center><img src="2.png"></center> 
 <body>
+<h4><center>クラス</center></h4>
+<p><center>3年4組</center></p>
 <h3><center>4つの系</center></h3>
 <p><center>人文系・理数系・国際系・美術工芸系</center></p>
 <center><h4>特徴</h4></center>
@@ -20,7 +23,45 @@
 <P><center>駅からが遠い</center></P>
 <script src="jsp/app.js"></script>
 <body bgcolor="#00bfff"></body>
-<P><center>発生した事件</center></P>
+<h4><center>発生した事件</center></h4>
+<p><center>高校３年間同じクラスだったやつが３人退学したこと</center></p>
+
+<h5><center>班員からのコメント</center></h5>
+<p>佐藤</p>
+<P>徳田</P>
+<p>川上</p>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ボタン押下回数カウント</title>
+    <style>
+        #counter {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button id="countButton">ボタンを押してね</button>
+    <div id="counter">0回</div>
+
+    <script>
+        // カウンターの初期値を0に設定
+        let count = 0;
+
+        // ボタンとカウンター表示要素を取得
+        const button = document.getElementById('countButton');
+        const counter = document.getElementById('counter');
+
+        // ボタンがクリックされた時の処理を設定
+        button.addEventListener('click', () => {
+            count++;
+            counter.textContent = `${count}回`;
+        });
+    </script>
+</body>
 </html>
 
-
+</html>
