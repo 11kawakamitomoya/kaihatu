@@ -1,0 +1,15 @@
+#g_navi ul {
+	display: flex;
+	list-style-type: none;
+}
+#g_navi ul li {
+	position: relative;
+	width: 5%;
+}
+#g_navi ul li a {
+	display: block;
+	padding: 17px 10px;
+	color: #000000;
+	text-align: left;
+	text-decoration: none;
+}
