@@ -14,3 +14,4 @@ function set2fig(num) {
     document.getElementById("RealtimeClockArea").innerHTML = msg;
  }
  setInterval('showClock2()',1000);
+

@@ -1,10 +1,82 @@
-!DOCTYPE html>
+
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/koji.css">
+    <title></title>
+    <p>佐藤大和の出身校紹介ページ   (作成者：小路)</p>
+    <h1><center>岡山県立総社南高校</center></h1>
+</head>
+<center><img src="images/画像.png"></center>
+<center><img src="images/画像1.png"></center>
+<h2><center>創立</center></h2>
+<p><center>1986年に創立</center></p>
+<center><img src="2.png"></center> 
+<body>
+<h4><center>クラス</center></h4>
+<p><center>3年4組</center></p>
+<h3><center>4つの系</center></h3>
+<p><center>人文系・理数系・国際系・美術工芸系</center></p>
+<center><h4>特徴</h4></center>
+<p>２年時に４つの系（人文・理数・国際・美術工芸）から自分に合った系を選択し、その特徴を生かした探究的な学びを通して、一人一人の個性の伸長と進路実現が図られる点にあります。</p>
+<p><center>単位制の高校</center></p>
+<P><center>駅からが遠い</center></P>
+<script src="jsp/app.js"></script>
+<body bgcolor="#00bfff"></body>
+<h4><center>発生した事件</center></h4>
+<p><center>高校３年間同じクラスだったやつが３人退学したこと</center></p>
+
+<h5><center>班員からのコメント</center></h5>
+<p>佐藤：そんなこともあったなと感慨深くなった</p>
+<P>徳田：自分の高校と違いすぎてびっくり</P>
+<p>川上：三年通って退学はかわいそうだなと思った。</p>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>アラートメッセージを表示</title>
 </head>
 <body>
-<script src="jsp/app.js"></script>
+    <label for="numberInput">数字を入力してください:</label>
+    <input type="text" id="numberInput">
+    <button onclick="showAlerts()">アラートを表示</button>
+
+    <script src="script.js"></script>
 </body>
+<script>function showAlerts() {
+    // テキストボックスの値を取得
+    const numberInput = document.getElementById('numberInput').value;
+    const count = parseInt(numberInput, 10); // 文字列を整数に変換
+
+    // 数が有効かどうかチェック
+    if (isNaN(count) || count <= 0) {
+        alert('正の整数を入力してください。');
+        return;
+    }
+
+    // 入力された数だけアラートを表示
+    for (let i = 0; i < count; i++) {
+        alert(`アラートメッセージ ${i + 1}`);
+    }
+}
+</script>
+</html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リンクの例</title>
+</head>
+<body>
+    <p><a href="tokuda.html"</a>徳田</p>
+    <p><a href="satou.html" >大和</a></p>
+    <p><a href="kawakami.html" >川上</a></p>
+    <P><a href="index.html"top</a></p>
+    <P><index class="html"></index>top</P>
+
+</body>
+</html>
 </html>

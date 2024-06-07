@@ -1,0 +1,112 @@
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ボディ全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 60px;
+}
+
+/* ヘッダーのスタイル */
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header p {
+    margin: 0;
+    text-align: center;
+}
+
+.logo {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+.nav ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* メインコンテンツのスタイル */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo-school {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo-school img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* フッターのスタイル */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.gotop {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.gotop img {
+    width: 50px;
+    height: 50px;
+}
+
+.copyright {
+    margin: 0;
+}
